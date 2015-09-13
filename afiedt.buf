@@ -1,0 +1,2 @@
+select object_name, object_type, from dba_objects where owner = 'XTRA'
+/
