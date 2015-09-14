@@ -11,22 +11,22 @@ is the testing methodology to determine if a certain test passes.
 You can build an excel input file that has the url, expected http status and input json,
 and runTests.py will generate HTTP requests using requests library and compare the expected inputs with the actual results and determines if the tests passed or failed.
 
-Refer to the sample xml file in the testdata/ directory for the format of the input file.
+Refer to the sample xlsx file in the testdata/ directory for the format of the input file.
 
 To install and run this project, follow the instructions.
 
 1. Clone the repository.
-git clone https://github.dev.dealertrack.com/DT2-CalcServices/calc-api-tests.git
+    git clone  https://github.com/varmarakesh/rest-api-tester.git
 2. Install the necessary libraries with the specified versions, suggest to create a virtualenv.
-    cd /calc_api_tests/build
-    pip install -r requirements.txt
+    *cd /rest-api-tester/build
+    *pip install -r requirements.txt
 4. In config.ini, update your testdata_directory_path to the directory path where your testdata will reside, update the http headers (eg: authentication, content-type).
 4. python runTests.py
 5. Check the results directory, for each xlsx file in the testdata, a results file will be created in the results directory.
 
 This has been tested so far using.
-python 2.7
-mac osx 10.9.5
-centos 7
+*python 2.7
+*mac osx 10.9.5
+*centos 7
 
 
